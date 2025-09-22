@@ -1,3 +1,6 @@
+Data Preprocessing steps.
+
+
 Used the Titanic dataset from Kaggle.
 Loaded the data into datframe.
 checked the missing values in teh data.
@@ -8,3 +11,4 @@ Similarly embarked column had 2 missing values so we used mode to fill the na va
 Then we performed one hot encoding ,droping the first column for 'sex' column and not dropping it for 'embarked' and 'deck' columns.
 After this we scaled the numerical continuous data using standardscaler.
 After that we plotted the box plot to find the outliers. There were alot of outliers for 'fare' and 'age' column and hence it did not make sense to remove those rows. 
+For 'sib' and 'par' columns ,I printed the outliers and their values seem plausible in some cases, hence these outliers can be meaningful for analysis.
