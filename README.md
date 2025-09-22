@@ -1,0 +1,10 @@
+Used the Titanic dataset from Kaggle.
+Loaded the data into datframe.
+checked the missing values in teh data.
+Checked teh distribution of data with KDE plot.
+The distribution was slightly skewed, close to normal so we used median for filling up the na values in the Age column.
+Then cabin had many missing values ,almost 77% of the data in teh column hence we could not remove the rows so we filled na values with Unknown.
+Similarly embarked column had 2 missing values so we used mode to fill the na values here.
+Then we performed one hot encoding ,droping the first column for 'sex' column and not dropping it for 'embarked' and 'deck' columns.
+After this we scaled the numerical continuous data using standardscaler.
+After that we plotted the box plot to find the outliers. There were alot of outliers for 'fare' and 'age' column and hence it did not make sense to remove those rows. 
